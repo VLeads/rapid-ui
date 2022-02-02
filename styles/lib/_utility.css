@@ -30,15 +30,36 @@ a{
 
 .yellow{
     background-color: #FDE7BD;
-    color: #E69C14
+    color: #dd9002
 }
 
 .green{
-    background-color: #AEFABE;
-    color: #3DA121
+    background-color: #9bfcb0;
+    color: #24820a
 }
 
 .blue{
     background-color: var(--primary-light-color);
     color: var(--primary-dark-color)
+}
+
+.grey{
+    color: #606060;
+    background-color: #b1b3b3 ;
+}
+
+.bg-red{
+    background-color: #cc1010;
+}
+
+.bg-yellow{
+    background-color: #c7c726;
+}
+
+.bg-grey{
+    background: #606060;
+}
+
+.bg-green{
+    background: #47b617;
 }

@@ -1,0 +1,58 @@
+.badge-wrapper{
+    position: relative;
+    /* overflow: visible; */
+}
+
+.badge{
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 0.1rem 0.5rem;
+}
+
+.badge-status{
+    position: absolute;
+    border-radius: 50%;
+    border: 0.5px solid white;
+    bottom: 19%;
+    left: 78%
+}
+
+.badge-sm{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.badge-md{
+    width: 2rem;
+    height: 2rem;
+}
+
+.badge-lg{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.badge-xlg{
+    width: 3rem;
+    height: 3rem;
+}
+
+.badge-icon{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-icon > .badge{
+    border-radius: 10px;
+    position: absolute;
+    top: -12px;
+    right: -15px
+}
+
+.badge-icon > i{
+    font-size: 2.5rem
+}
