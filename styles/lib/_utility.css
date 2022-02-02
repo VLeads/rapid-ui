@@ -1,0 +1,44 @@
+/* **** Anchor tag */
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.color-dark-grey{
+    color: var(--dark-grey)
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.grid-ctr{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.red{
+    background-color: #FCC3C3;
+    color: #FC3A3A
+}
+
+.yellow{
+    background-color: #FDE7BD;
+    color: #E69C14
+}
+
+.green{
+    background-color: #AEFABE;
+    color: #3DA121
+}
+
+.blue{
+    background-color: var(--primary-light-color);
+    color: var(--primary-dark-color)
+}

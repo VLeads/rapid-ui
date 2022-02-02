@@ -1,0 +1,33 @@
+@import "./lib/_reset.css";
+@import "./lib/_root.css";
+@import "./lib/_utility.css";
+@import "./lib/_typography.css";
+@import "./lib/_alert.css";
+@import "./lib/_card.css";
+@import "./lib/_avatar.css";
+@import "./lib/_button.css";
+
+*{
+    word-wrap: break-word;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    letter-spacing: 0.28px;
+    line-height: 2rem;
+}
+
+body{
+    color: var(--dark-color)
+}
+
+@keyframes opening {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

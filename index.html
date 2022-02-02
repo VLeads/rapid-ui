@@ -4,7 +4,176 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- -------- -->
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+
+    <title>Rapid UI</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page-layout">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./assets/logo.png" alt="logo" />
+        </div>
+        <!-- <div class="header__name">Rapid UI</div> -->
+        <ul class="header__links">
+          <li class="mr-3">
+            <a href="https://twitter.com/Vishalk01234">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/VLeads"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </header>
+
+      <!-- ------sidebar--------- -->
+
+      <aside class="sidebar-main">
+        <div class="sidebar">
+          <h3 class="color-dark-grey">Getting Started</h3>
+          <a href="#documentation-section">Documentation</a>
+          <h3 class="color-dark-grey">Components</h3>
+          <ul class="sidebar__links">
+            <a href="#alert-section"><li>Alert</li></a>
+            <a href="#avatar-section"><li>Avatar</li></a>
+            <a href="#badge-section"><li>Badge</li></a>
+            <a href="#button-section"><li>Button</li></a>
+            <a href="#card-section"><li>Card</li></a>
+            <a href="#image-section"><li>Image</li></a>
+            <a href="#input-section"><li>Input</li></a>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- ------- main ---- -->
+
+      <main class="page-content container">
+        <!-- ---------- Alert ---------- -->
+
+        <section id="alert-section">
+          <div class="component-description">
+            <h2>Alert</h2>
+            <p>
+              An alert displays a short, important message in a way that
+              attracts the user's attention without interrupting the user's
+              task.
+            </p>
+          </div>
+
+          <div class="component-example">
+            <h3>Basic alerts</h3>
+            <p>
+              The alert offers four severity levels that set a distinctive icon
+              and color.
+            </p>
+
+            <div class="component-example__container flex-col">
+              <div class="alert alert-info">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> This is an
+                info alert !
+              </div>
+              <div class="alert alert-warning">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                This is a warning alert !
+              </div>
+              <div class="alert alert-error">
+                <i class="fas fa-exclamation-circle"></i>
+                This is an error alert !
+              </div>
+              <div class="alert alert-success">
+                <i class="far fa-check-circle"></i>
+                This is a success alert !
+              </div>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h3>Alert with actions</h3>
+            <p>
+              An alert can have an action, such as a close or undo button. It is
+              rendered after the message, at the end of the alert.
+            </p>
+            <p>
+              We can perform action when alert is rendered like close or undo
+              previous action.
+            </p>
+
+            <div class="component-example__container flex-col">
+              <div class="alert alert-success">
+                <i class="far fa-check-circle"></i> This is a success alert
+                !<span class="alert-action"
+                  ><i class="far fa-times-circle"></i
+                ></span>
+              </div>
+              <div class="alert alert-success">
+                <i class="far fa-check-circle"></i>
+                This is a success alert ! <span class="alert-action">UNDO</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ---- avatar ----- -->
+        <section id="avatar-section">
+          <div class="component-description">
+            <h2>Avatar</h2>
+            <p>
+              Avatar can be used to show user's profile picture on profile
+              information page, on navigation bar, in blogs grid items.
+            </p>
+          </div>
+          <div class="component-exxample">
+            <h3>Image Avatar</h3>
+            <p>Avatar is available in 4 different sizes</p>
+
+            <div class="component-example__container align-center">
+              <div class="avatar avatar-sm">
+                <img src="./assets/images/user1.jpg" alt="user1" />
+              </div>
+
+              <div class="avatar avatar-md">
+                <img src="./assets/images/user2.jpeg" alt="user2" />
+              </div>
+
+              <div class="avatar avatar-lg">
+                <img src="./assets/images/user3.jpg" alt="user2" />
+              </div>
+
+              <div class="avatar avatar-xlg">
+                <img src="./assets/images/user4.jpeg" alt="user3" />
+              </div>
+            </div>
+          </div>
+          <div class="component-example">
+            <h3>Text Avatar</h3>
+            <p>You can use initial letters of user in avatar as well.</p>
+
+            <div class="component-example__container align-center">
+              <div class="avatar avatar-sm grid-ctr red">VK</div>
+
+              <div class="avatar avatar-md grid-ctr yellow">VK</div>
+
+              <div class="avatar avatar-lg grid-ctr green">VK</div>
+
+              <div class="avatar avatar-xlg grid-ctr blue">VK</div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

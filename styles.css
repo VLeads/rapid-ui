@@ -1,0 +1,141 @@
+@import url(./styles/main.css);
+
+
+/* ***** page layout *** */
+
+.page-layout{
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.3fr;
+    grid-template-areas: 
+    "header  header header"
+    "sidebar  main   .";
+}
+
+
+/* ***** header ****** */
+
+.header{
+    grid-area: header;
+    padding: 1rem 2.8rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 8px -8px #d6d6d6;
+    font-weight: 500;
+    background-color: var(--primary-color)
+/* background-color: var(--primary-light-color); */
+}
+
+.header__logo{
+    display: flex;
+    margin-left: 7rem;
+}
+.header__logo > img{
+    width: 15rem;
+    height: 5.8rem
+}
+
+.header__links{
+    list-style: none;
+    display: flex;
+    font-size: 2.9rem;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.header__links li i{
+    color: black;
+}
+
+.header__links li i:hover{
+    cursor: pointer;
+    /* color: var(--primary-dark-color) */
+    color: var(--secondary-color)
+}
+
+
+/* ****** Sidebar ******* */
+
+.sidebar-main{
+    position: relative;
+    grid-area: sidebar;
+}
+
+.sidebar{
+    padding: 3rem;
+    padding-left: 4.5rem;
+    position: sticky;
+    overflow-y: auto;
+    top: 7rem;
+    height: calc(100vh - 8.125rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+.sidebar__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem
+}
+
+.sidebar h3{
+    display: grid;
+    justify-content: center;
+}
+
+.sidebar a{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    display: grid;
+    justify-content: center;
+}
+
+.sidebar li{
+    list-style: none;
+}
+
+.sidebar a:hover{
+    color: var(--primary-light-color);
+}
+
+/* ******* container ******* */
+
+.container{
+    padding: 1rem 2rem;
+}
+
+.component-description{
+    margin: 2.2rem 0 3rem 0;
+}
+
+.component-description > h2{
+    color: var(--primary-color)
+}
+
+.component-example{
+    margin-top: 5rem
+}
+
+.component-example__container{
+    display: flex;
+    border: 1px solid rgb(20 20 20 / 12%);
+    border-radius: 0 2rem;
+    padding: 2rem;
+    background-color: var(--xlight-blue);
+    justify-content: space-evenly;
+}
+
