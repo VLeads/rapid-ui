@@ -7,6 +7,7 @@
 @import "./lib/_card.css";
 @import "./lib/_avatar.css";
 @import "./lib/_button.css";
+@import "./lib/_image.css";
 
 *{
     word-wrap: break-word;
