@@ -46,10 +46,9 @@ strike{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right:2rem;
 }
 
-.card-footer > i {
+.card-footer > .btn-card > i {
     font-size: 1.8rem;
 
 }
@@ -83,4 +82,13 @@ strike{
 .card-horizontal-right-part{
     display: flex;
     flex-direction: column;
+}
+
+.btn-card{
+    outline:none;
+    border: 0;
+    padding: 1rem 1.8rem;
+    background: transparent;
+    cursor: pointer;
+    align-items: center;
 }
