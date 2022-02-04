@@ -8,6 +8,7 @@
 @import "./lib/_avatar.css";
 @import "./lib/_button.css";
 @import "./lib/_image.css";
+@import "./lib/_input.css";
 
 *{
     word-wrap: break-word;
