@@ -1,0 +1,86 @@
+.card-vertical{
+   height: 36.4rem;
+   background: #fff;
+   width: 27rem;
+   position: relative;
+   padding: 1.5rem;
+   border-radius: 5px;
+   box-shadow: 0 0 15px var(--card-shadow);
+}
+
+.card-vertical > img {
+    width: 100%;
+    height: 16rem;
+    object-fit: contain;
+}
+
+.cancel-btn{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--grey);
+}
+
+.card-header{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-price{
+    position: relative;
+    font-weight: 500;
+}
+
+.price{
+    color: #e11818;
+}
+
+strike{
+    margin-left: 0.4rem;
+    font-size: 1.3rem;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:2rem;
+}
+
+.card-footer > i {
+    font-size: 1.8rem;
+
+}
+
+.card-badge{
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+/* **** horizontal card **** */
+
+.card-horizontal{
+    height: 20rem;
+    width: 50rem;
+    background: #fff;
+    position: relative;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--card-shadow);
+    display: flex;
+}
+
+.card-horizontal > img {
+    height: 100%;
+    width: 18rem;
+    object-fit: contain;
+    margin-right: 2.5rem;
+}
+
+.card-horizontal-right-part{
+    display: flex;
+    flex-direction: column;
+}

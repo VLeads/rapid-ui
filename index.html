@@ -12,6 +12,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+
     <!-- -------- -->
 
     <link rel="stylesheet" href="./styles.css" />
@@ -99,6 +100,22 @@
                 This is a success alert !
               </div>
             </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/nlm6Xyfb6HW1khg7oZWK"
+                style="
+                  width: 100%;
+                  height: 298px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
           </div>
 
           <div class="component-example">
@@ -124,6 +141,22 @@
                 This is a success alert ! <span class="alert-action">UNDO</span>
               </div>
             </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                src="https://carbon.now.sh/embed/HluU4UacRKlkL9DBrvif"
+                style="
+                  width: 100%;
+                  height: 223px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
           </div>
         </section>
 
@@ -137,7 +170,7 @@
               information page, on navigation bar, in blogs grid items.
             </p>
           </div>
-          <div class="component-exxample">
+          <div class="component-example">
             <h3>Image Avatar</h3>
             <p>Avatar is available in 4 different sizes</p>
 
@@ -314,6 +347,106 @@
         <section id="card-section">
           <div class="component-description">
             <h2>Card</h2>
+            <p>
+              cards are used to display content and action on a particular
+              topic.
+            </p>
+          </div>
+          <div class="component-example">
+            <h3>Vertical cards</h3>
+            <p>
+              It has 3 variants normal card, card with cancel button & card with
+              badge
+            </p>
+            <div class="component-example__container">
+              <div class="card-vertical">
+                <img src="./assets/images/card-img.png" alt="card" />
+                <div class="card-body">
+                  <h4 class="card-header">
+                    ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
+                    SSD/Windows 10 Home/4 GB Graphic...
+                  </h4>
+                  <p class="card-price">
+                    <span class="price">₹96,990 </span>
+                    <strike>₹1,36,990</strike>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-share-alt"></i>
+                </div>
+              </div>
+              <div class="card-vertical">
+                <span class="cancel-btn"><i class="fas fa-times"></i></span>
+
+                <img src="./assets/images/card-img.png" alt="card" />
+                <div class="card-body">
+                  <h4 class="card-header">
+                    ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
+                    SSD/Windows 10 Home/4 GB Graphic...
+                  </h4>
+                  <p class="card-price">
+                    <span class="price">₹96,990 </span>
+                    <strike>₹1,36,990</strike>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-share-alt"></i>
+                </div>
+              </div>
+
+              <div class="card-vertical">
+                <span class="cancel-btn"><i class="fas fa-times"></i></span>
+                <div class="card-badge badge green">Trending</div>
+                <img src="./assets/images/card-img.png" alt="card" />
+                <div class="card-body">
+                  <h4 class="card-header">
+                    ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
+                    SSD/Windows 10 Home/4 GB Graphic...
+                  </h4>
+                  <p class="card-price">
+                    <span class="price">₹96,990 </span>
+                    <strike>₹1,36,990</strike>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <i class="far fa-heart"></i>
+                  <i class="fas fa-share-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h3>Horizontal Card</h3>
+            <div class="component-example__container">
+              <div class="card-horizontal">
+                <span class="cancel-btn"><i class="fas fa-times"></i></span>
+                <div class="card-badge badge green">Trending</div>
+                <img src="./assets/images/card-img.png" alt="card" />
+                <div class="card-horizontal-right-part">
+                  <div class="card-body">
+                    <h4 class="card-header">
+                      ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512
+                      GB SSD/Windows 10 Home/4 GB Graphic...
+                    </h4>
+                    <p class="card-price">
+                      <span class="price">₹96,990 </span>
+                      <strike>₹1,36,990</strike>
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-share-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
