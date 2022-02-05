@@ -25,16 +25,17 @@ gap: 1rem;
  
 }
 
-.hero-left > button {
-    width: 20rem;
+.hero-left > a {
+    width: 18rem;
     height: 4.5rem;
     font-size: 1.8rem;
+    text-align: center;
+    line-height: 24px;
+    
 }
 
 .hero-right{
     grid-area:right;
-   
-
 }
 
 .hero-right > img{
