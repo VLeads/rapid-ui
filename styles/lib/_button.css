@@ -104,3 +104,9 @@
     color: #DC3545;
     border: 2px solid #DC3545;;
 }
+
+.btn-float{
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 2px #9f9f9f;
+    font-size: 2rem;
+}

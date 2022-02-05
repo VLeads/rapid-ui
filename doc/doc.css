@@ -1,0 +1,43 @@
+.hero{
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 6rem 1fr 1fr 2rem;
+    grid-template-areas: 
+    ". left right .";
+    /* height: 80vh; */
+gap: 1rem;
+
+
+}
+
+.hero > div {
+    padding: 1rem;
+
+}
+
+.hero-left{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 40vw;
+ 
+}
+
+.hero-left > button {
+    width: 20rem;
+    height: 4.5rem;
+    font-size: 1.8rem;
+}
+
+.hero-right{
+    grid-area:right;
+   
+
+}
+
+.hero-right > img{
+    width: 65rem;
+    height: 48rem;
+}
