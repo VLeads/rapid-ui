@@ -1,6 +1,6 @@
 .signup-form{
     width: 41rem;
-    height: 38rem;
+    height: 41rem;
     padding: 2.5rem 6rem;
     padding-bottom: 2rem;
 }
@@ -64,6 +64,36 @@
 .forgot-pass{
     margin-left: auto;
     color: var(--primary-dark-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.textarea{
+    min-height: 130px;
+    width: 70%;
+    padding:1rem;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    resize: none;
+    border: 1px solid var(--grey);
+}
+
+.error-msg{
+    color: var(--red);
     font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.input-box-error{
+    border: 1px solid var(--red);
+}
+
+.success-msg{
+    color: var(--green);
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+.input-box-success{
+    border: 1px solid var(--green);
 }

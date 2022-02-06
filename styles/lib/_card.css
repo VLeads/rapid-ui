@@ -4,7 +4,7 @@
    width: 27rem;
    position: relative;
    padding: 1.5rem;
-   border-radius: 5px;
+   border-radius: 6px;
    box-shadow: 0 0 15px var(--card-shadow);
 }
 
@@ -91,4 +91,35 @@ strike{
     background: transparent;
     cursor: pointer;
     align-items: center;
+}
+
+/* **** Card with text overlay **** */
+
+.text-overlay{
+    padding: 0;
+}
+
+.text-overlay > img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: inherit;
+    opacity: 95%;
+}
+
+.text-overlay > .card-body{
+position: absolute;
+color: white;
+top: 6rem;
+left: 1.3rem
+}
+
+.card-overlay-text{
+    word-spacing: 0.8rem;
+    margin-bottom: 3rem;
+    line-height: 4rem;
+    font-size: 2.8rem;
+    font-weight: 500;
 }

@@ -25,9 +25,11 @@
   <body>
     <div class="page-layout">
       <header class="header">
-        <div class="header__logo">
-          <img src="./assets/logo.png" alt="logo" />
-        </div>
+        <a href="./doc/doc.html">
+          <div class="header__logo">
+            <img src="./assets/logo.png" alt="logo" />
+          </div>
+        </a>
         <!-- <div class="header__name">Rapid UI</div> -->
         <ul class="header__links">
           <li class="mr-3">
@@ -48,7 +50,7 @@
       <aside class="sidebar-main">
         <div class="sidebar">
           <h3 class="color-dark-grey">Getting Started</h3>
-          <a href="#documentation-section">Documentation</a>
+          <a href="#doc-section">Documentation</a>
           <h3 class="color-dark-grey">Components</h3>
           <ul class="sidebar__links">
             <a href="#alert-section"><li>Alert</li></a>
@@ -66,6 +68,39 @@
 
       <main class="page-content container">
         <!-- ---------- Alert ---------- -->
+        <section id="doc-section">
+          <div class="component-description">
+            <h2>Installation</h2>
+            <p>
+              In order to use Rapid UI in your project, Copy the Link given
+              below and paste it in the head tag of your html, it contains all
+              the component styles shown on this website, which can be easily
+              created using the defined classes.
+            </p>
+          </div>
+
+          <div class="component-example">
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/CKgMB6eCdYLBaSzz0Bbj"
+                style="
+                  width: 679px;
+                  height: 72px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+
+        <!-- ---- alert ---- -->
 
         <section id="alert-section">
           <div class="component-description">
@@ -293,28 +328,44 @@
             <div class="component-example__container align-center">
               <div class="badge-wrapper">
                 <div class="avatar avatar-sm">
-                  <img src="./assets/images/user1.jpg" alt="user1" />
+                  <img
+                    src="./assets/images/user1.jpg"
+                    alt="user1"
+                    loading="lazy"
+                  />
                 </div>
                 <span class="badge-status badge-sm bg-green"></span>
               </div>
 
               <div class="badge-wrapper">
                 <div class="avatar avatar-md">
-                  <img src="./assets/images/user2.jpeg" alt="user2" />
+                  <img
+                    src="./assets/images/user2.jpeg"
+                    alt="user2"
+                    loading="lazy"
+                  />
                 </div>
                 <span class="badge-status badge-md bg-grey"></span>
               </div>
 
               <div class="badge-wrapper">
                 <div class="avatar avatar-lg">
-                  <img src="./assets/images/user3.jpg" alt="user2" />
+                  <img
+                    src="./assets/images/user3.jpg"
+                    alt="user2"
+                    loading="lazy"
+                  />
                 </div>
                 <span class="badge-status badge-lg bg-red"></span>
               </div>
 
               <div class="badge-wrapper">
                 <div class="avatar avatar-xlg">
-                  <img src="./assets/images/user4.jpeg" alt="user3" />
+                  <img
+                    src="./assets/images/user4.jpeg"
+                    alt="user3"
+                    loading="lazy"
+                  />
                 </div>
                 <span class="badge-status badge-xlg bg-yellow"></span>
               </div>
@@ -479,6 +530,31 @@
             >
             </iframe>
           </div>
+
+          <div class="component-example">
+            <h3>Floating Button</h3>
+            <div class="component-example__container">
+              <button class="btn btn-primary btn-float">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/JLgRdR0C7ihwMUcjZtHh"
+              style="
+                width: 100%;
+                height: 78px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
         </section>
 
         <hr class="section-break-line" />
@@ -499,7 +575,11 @@
             </p>
             <div class="component-example__container">
               <div class="card-vertical">
-                <img src="./assets/images/card-img.png" alt="card" />
+                <img
+                  src="./assets/images/card-img.png"
+                  alt="card"
+                  loading="lazy"
+                />
                 <div class="card-body">
                   <h4 class="card-header">
                     ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
@@ -523,7 +603,11 @@
               <div class="card-vertical">
                 <span class="cancel-btn"><i class="fas fa-times"></i></span>
 
-                <img src="./assets/images/card-img.png" alt="card" />
+                <img
+                  src="./assets/images/card-img.png"
+                  alt="card"
+                  loading="lazy"
+                />
                 <div class="card-body">
                   <h4 class="card-header">
                     ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
@@ -548,7 +632,11 @@
               <div class="card-vertical">
                 <span class="cancel-btn"><i class="fas fa-times"></i></span>
                 <div class="card-badge badge green">Trending</div>
-                <img src="./assets/images/card-img.png" alt="card" />
+                <img
+                  src="./assets/images/card-img.png"
+                  alt="card"
+                  loading="lazy"
+                />
                 <div class="card-body">
                   <h4 class="card-header">
                     ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
@@ -594,7 +682,11 @@
               <div class="card-horizontal">
                 <span class="cancel-btn"><i class="fas fa-times"></i></span>
                 <div class="card-badge badge green">Trending</div>
-                <img src="./assets/images/card-img.png" alt="card" />
+                <img
+                  src="./assets/images/card-img.png"
+                  alt="card"
+                  loading="lazy"
+                />
                 <div class="card-horizontal-right-part">
                   <div class="card-body">
                     <h4 class="card-header">
@@ -627,6 +719,42 @@
                 style="
                   width: 100%;
                   height: 400px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h3>Text Overlay Card</h3>
+            <div class="component-example__container">
+              <div class="card-vertical text-overlay">
+                <img
+                  src="./assets/images/txt-overlay.jpg"
+                  alt="card"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h4 class="card-overlay-text">
+                    Gaming consoles are back in stock. HURRY UP!!
+                  </h4>
+                  <button class="btn btn-primary">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/MnDwPcPHV7tXORGIC5uF"
+                style="
+                  width: 100%;
+                  height: 185px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;
@@ -786,7 +914,7 @@
             </div>
           </div>
           <div class="component-example">
-            <h3>Login Input Form</h3>
+            <h3>Login Input Form with validations</h3>
             <div class="component-example__container">
               <form class="card-vertical signup-form">
                 <h3>Login</h3>
@@ -795,19 +923,21 @@
                   <div class="input-group">
                     <label>Email address</label>
                     <input
-                      class="input-box"
+                      class="input-box input-box-success"
                       type="email"
                       placeholder="vishal@mail.com"
                     />
+                    <div class="success-msg">Email matched</div>
                   </div>
 
                   <div class="input-group">
                     <label> Password </label>
                     <input
-                      class="input-box"
+                      class="input-box input-box-error"
                       type="password"
                       placeholder="******"
                     />
+                    <div class="error-msg">Incorrect password</div>
                   </div>
 
                   <div class="select-box">
@@ -828,10 +958,10 @@
             <div class="code-snippet">
               <iframe
                 class="code-snippet-code"
-                src="https://carbon.now.sh/embed/QFKtclVnjmIcblbQVV9t"
+                src="https://carbon.now.sh/embed/zDhLrIrqCP4wxt2oMVJA"
                 style="
                   width: 100%;
-                  height: 558px;
+                  height: 580px;
                   border: 0;
                   transform: scale(1);
                   overflow: hidden;
@@ -840,6 +970,33 @@
               >
               </iframe>
             </div>
+          </div>
+
+          <div class="component-example">
+            <h3>Textbox Form</h3>
+            <div class="component-example__container">
+              <textarea
+                class="textarea"
+                placeholder="Please provide your feedback."
+              ></textarea>
+            </div>
+          </div>
+
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/XYitgQ0MiXdYR7NG59y2"
+              style="
+                width: 100%;
+                height: 80px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
           </div>
         </section>
       </main>
