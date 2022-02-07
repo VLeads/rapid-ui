@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="shortcut icon"
       href="../assets/favicon.ico"
       type="image/x-icon"
     />
 
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="./doc.css" />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -22,14 +21,19 @@
 
     <!-- -------- -->
 
+    <link rel="stylesheet" href="./doc.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+
     <title>Rapid UI | Docs</title>
   </head>
   <body>
     <div class="page-layout">
       <header class="header">
-        <div class="header__logo">
-          <img src="../assets/logo.png" alt="logo" />
-        </div>
+        <a href="../index.html">
+          <div class="header__logo">
+            <img src="../assets/logo.png" alt="logo" />
+          </div>
+        </a>
         <!-- <div class="header__name">Rapid UI</div> -->
         <ul class="header__links">
           <li class="mr-3">
@@ -45,24 +49,889 @@
         </ul>
       </header>
 
-      <div class="hero">
-        <div class="hero-left">
-          <h1>
-            Boost up your development speed without worrying about design.
-          </h1>
-          <p>
-            Rapid UI is a CSS library, integrated with pre-defined styled
-            classes, and Utilites, for a quick creation of websites, with much
-            focus on Functionality.
-          </p>
-          <a  class="btn btn-primary" href="../index.html">
-            Get Started
-          </a>
+      <!-- ------sidebar--------- -->
+
+      <aside class="sidebar-main">
+        <div class="sidebar">
+          <h3 class="color-dark-grey">Getting Started</h3>
+          <a href="#doc-section">Documentation</a>
+          <a href="#typo-section">Typography</a>
+          <h3 class="color-dark-grey">Components</h3>
+          <ul class="sidebar__links">
+            <a href="#alert-section"><li>Alert</li></a>
+            <a href="#avatar-section"><li>Avatar</li></a>
+            <a href="#badge-section"><li>Badge</li></a>
+            <a href="#button-section"><li>Button</li></a>
+            <a href="#card-section"><li>Card</li></a>
+            <a href="#image-section"><li>Image</li></a>
+            <a href="#input-section"><li>Input</li></a>
+          </ul>
         </div>
-        <div class="hero-right">
-          <img src="../assets/images/hero.png" alt="" />
-        </div>
-      </div>
+      </aside>
+
+      <!-- ------- main ---- -->
+
+      <main class="page-content container">
+        <!-- ---------- Documentation ---------- -->
+        <section id="doc-section">
+          <div class="component-description">
+            <h2>Installation</h2>
+            <p>
+              In order to use Rapid UI in your project, Copy the Link given
+              below and paste it in the head tag of your html, it contains all
+              the component styles shown on this website, which can be easily
+              created using the defined classes.
+            </p>
+          </div>
+
+          <div class="component-example">
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/CKgMB6eCdYLBaSzz0Bbj"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+
+        <section id="typo-section">
+          <div class="component-description">
+            <h2>Typography</h2>
+            <p>Utilities for controlling the text.</p>
+          </div>
+
+          <div class="component-example">
+            <h3>Headings</h3>
+            <div class="component-example__container flex-col">
+              <h1 class="h1">The quick brown fox jumps over the lazy dog.</h1>
+              <h2 class="h2">The quick brown fox jumps over the lazy dog.</h2>
+              <h3 class="h3">The quick brown fox jumps over the lazy dog.</h3>
+              <h4 class="h4">The quick brown fox jumps over the lazy dog.</h4>
+              <h5 class="h5">The quick brown fox jumps over the lazy dog.</h5>
+            </div>
+          </div>
+
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/URAyq8OJ7ZY5w5pRJOMA"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <div class="component-example">
+            <h3>Text Alignment</h3>
+            <div class="component-example__container flex-col">
+              <h3 class="justify-left">Text Left</h3>
+              <h3 class="justify-center">Text Center</h3>
+              <h3 class="justify-right">Text Right</h3>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/1HC9xhGiL8lXLtGXWVGN"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="component-example">
+            <h3>Font Weights</h3>
+            <div class="component-example__container flex-col">
+              <p class="light">The quick brown fox jumps over the lazy dog</p>
+              <p class="regular">The quick brown fox jumps over the lazy dog</p>
+              <p class="semi-bold">
+                The quick brown fox jumps over the lazy dog
+              </p>
+              <p class="bold">The quick brown fox jumps over the lazy dog</p>
+              <p class="black">The quick brown fox jumps over the lazy dog</p>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/eGw6wc0F7Q7PItHj2wfV"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+
+        <!-- ---- alert ---- -->
+
+        <section id="alert-section">
+          <div class="component-description">
+            <h2>Alert</h2>
+            <p>
+              An alert displays a short, important message in a way that
+              attracts the user's attention without interrupting the user's
+              task.
+            </p>
+          </div>
+
+          <div class="component-example">
+            <h3>Basic alerts</h3>
+            <p>
+              The alert offers four severity levels that set a distinctive icon
+              and color.
+            </p>
+
+            <div class="component-example__container flex-col">
+              <div class="alert alert-info">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> This is an
+                info alert !
+              </div>
+              <div class="alert alert-warning">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                This is a warning alert !
+              </div>
+              <div class="alert alert-error">
+                <i class="fas fa-exclamation-circle"></i>
+                This is an error alert !
+              </div>
+              <div class="alert alert-success">
+                <i class="far fa-check-circle"></i>
+                This is a success alert !
+              </div>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/nlm6Xyfb6HW1khg7oZWK"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h3>Alert with actions</h3>
+            <p>
+              An alert can have an action, such as a close or undo button. It is
+              rendered after the message, at the end of the alert.
+            </p>
+            <p>
+              We can perform action when alert is rendered like close or undo
+              previous action.
+            </p>
+
+            <div class="component-example__container flex-col">
+              <div class="alert alert-success">
+                <i class="far fa-check-circle"></i> This is a success alert
+                !<span class="alert-action"
+                  ><i class="far fa-times-circle"></i
+                ></span>
+              </div>
+              <div class="alert alert-success">
+                <i class="far fa-check-circle"></i>
+                This is a success alert ! <span class="alert-action">UNDO</span>
+              </div>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/HluU4UacRKlkL9DBrvif"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+        <!-- ---- avatar ----- -->
+        <section id="avatar-section">
+          <div class="component-description">
+            <h2>Avatar</h2>
+            <p>
+              Avatar can be used to show user's profile picture on profile
+              information page, on navigation bar, in blogs grid items.
+            </p>
+          </div>
+          <div class="component-example">
+            <h3>Image Avatar</h3>
+            <p>Avatar is available in 4 different sizes</p>
+
+            <div class="component-example__container align-center">
+              <div class="avatar avatar-sm">
+                <img src="../assets/images/user1.jpg" alt="user1" />
+              </div>
+
+              <div class="avatar avatar-md">
+                <img src="../assets/images/user2.jpeg" alt="user2" />
+              </div>
+
+              <div class="avatar avatar-lg">
+                <img src="../assets/images/user3.jpg" alt="user2" />
+              </div>
+
+              <div class="avatar avatar-xlg">
+                <img src="../assets/images/user4.jpeg" alt="user3" />
+              </div>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/7MphlYHj2FK2RAUe9uWU"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="component-example">
+            <h3>Text Avatar</h3>
+            <p>You can use initial letters of user in avatar as well.</p>
+
+            <div class="component-example__container align-center">
+              <div class="avatar avatar-sm grid-ctr red">VK</div>
+
+              <div class="avatar avatar-md grid-ctr yellow">VK</div>
+
+              <div class="avatar avatar-lg grid-ctr green">VK</div>
+
+              <div class="avatar avatar-xlg grid-ctr blue">VK</div>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/4Bsv8ofkPKeRxvl3CDa3"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+        <!-- ------- Badges ------ -->
+
+        <section id="badge-section">
+          <div class="component-description">
+            <h2>Badge</h2>
+            <p>
+              Badges are being used to display a notification count or status
+              information.
+            </p>
+          </div>
+
+          <div class="component-example">
+            <h3>Badge tags</h3>
+
+            <div class="component-example__container">
+              <span class="badge green">New</span>
+              <span class="badge red">Sale</span>
+              <span class="badge blue">Trending</span>
+              <span class="badge green">Latest</span>
+              <span class="badge yellow">Best Seller</span>
+            </div>
+          </div>
+
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/Gh00kQNhxR2dlehcOfkR"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="component-example">
+            <h3>Badge on Avatar</h3>
+            <p>Avatar Badge is used to show the current status of a user.</p>
+
+            <div class="component-example__container align-center">
+              <div class="badge-wrapper">
+                <div class="avatar avatar-sm">
+                  <img
+                    src="../assets/images/user1.jpg"
+                    alt="user1"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="badge-status badge-sm bg-green"></span>
+              </div>
+
+              <div class="badge-wrapper">
+                <div class="avatar avatar-md">
+                  <img
+                    src="../assets/images/user2.jpeg"
+                    alt="user2"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="badge-status badge-md bg-grey"></span>
+              </div>
+
+              <div class="badge-wrapper">
+                <div class="avatar avatar-lg">
+                  <img
+                    src="../assets/images/user3.jpg"
+                    alt="user2"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="badge-status badge-lg bg-red"></span>
+              </div>
+
+              <div class="badge-wrapper">
+                <div class="avatar avatar-xlg">
+                  <img
+                    src="../assets/images/user4.jpeg"
+                    alt="user3"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="badge-status badge-xlg bg-yellow"></span>
+              </div>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/ywPOf0h6eLAzlSWutpDR"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h3>Badge on Icons</h3>
+
+            <div class="component-example__container">
+              <span class="badge-icon">
+                <span class="badge blue">20+</span>
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+
+              <span class="badge-icon">
+                <span class="badge yellow">20+</span>
+                <i class="fas fa-bell"></i>
+              </span>
+              <span class="badge-icon">
+                <span class="badge red">20+</span>
+                <i class="fas fa-heart"></i>
+              </span>
+            </div>
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/Tn8zOaT0A13yjuEZIiHJ"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="component-example">
+            <h3>Badge on text</h3>
+
+            <div class="component-example__container">
+              <h3>
+                Example of text with badge
+                <span class="badge grey">NEW</span>
+              </h3>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/F8fnvA2MERVYn4WpF8MH"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+        <!-- ------- Buttons ------ -->
+
+        <section id="button-section">
+          <div class="component-description">
+            <h2>Button</h2>
+            <p>
+              Buttons allow users to take actions, and make choices, with a
+              single tap. Buttons communicate actions that users can take.
+            </p>
+          </div>
+          <div class="component-example">
+            <h3>Button Variations</h3>
+            <div class="component-example__container">
+              <button class="btn btn-primary">Primary</button>
+              <button class="btn btn-secondary">Secondary</button>
+              <button class="btn btn-success">Success</button>
+              <button class="btn btn-warning">Warning</button>
+              <button class="btn btn-info">Info</button>
+              <button class="btn btn-danger">Danger</button>
+              <button class="btn btn-link">Link</button>
+            </div>
+          </div>
+
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/BMExEXXSw4ouP0mjcvKb"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="component-example">
+            <h3>Outline Button</h3>
+            <div class="component-example__container">
+              <button class="btn btn-primary btn-primary-outline">
+                Primary
+              </button>
+              <button class="btn btn-secondary btn-secondary-outline">
+                Secondary
+              </button>
+              <button class="btn btn-success btn-success-outline">
+                Success
+              </button>
+              <button class="btn btn-warning btn-warning-outline">
+                Warning
+              </button>
+              <button class="btn btn-info btn-info-outline">Info</button>
+              <button class="btn btn-danger btn-danger-outline">Danger</button>
+            </div>
+          </div>
+
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/NKOzk3ZgTOFBfEnoGQoE"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="component-example">
+            <h3>Floating Button</h3>
+            <div class="component-example__container">
+              <button class="btn btn-primary btn-float">
+                <i class="fa fa-arrow-up" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/JLgRdR0C7ihwMUcjZtHh"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+
+        <section id="card-section">
+          <div class="component-description">
+            <h2>Card</h2>
+            <p>
+              cards are used to display content and action on a particular
+              topic.
+            </p>
+          </div>
+          <div class="component-example">
+            <h3>Vertical cards</h3>
+            <p>
+              It has 3 variants normal card, card with cancel button & card with
+              badge
+            </p>
+            <div class="component-example__container">
+              <div class="card-vertical">
+                <img
+                  src="../assets/images/card-img.png"
+                  alt="card"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h4 class="card-header">
+                    ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
+                    SSD/Windows 10 Home/4 GB Graphic...
+                  </h4>
+                  <p class="card-price">
+                    <span class="price">₹96,990 </span>
+                    <strike>₹1,36,990</strike>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button class="btn-card">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn-card">
+                    <i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-vertical">
+                <span class="cancel-btn"><i class="fas fa-times"></i></span>
+
+                <img
+                  src="../assets/images/card-img.png"
+                  alt="card"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h4 class="card-header">
+                    ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
+                    SSD/Windows 10 Home/4 GB Graphic...
+                  </h4>
+                  <p class="card-price">
+                    <span class="price">₹96,990 </span>
+                    <strike>₹1,36,990</strike>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button class="btn-card">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn-card">
+                    <i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card-vertical">
+                <span class="cancel-btn"><i class="fas fa-times"></i></span>
+                <div class="card-badge badge green">Trending</div>
+                <img
+                  src="../assets/images/card-img.png"
+                  alt="card"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h4 class="card-header">
+                    ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512 GB
+                    SSD/Windows 10 Home/4 GB Graphic...
+                  </h4>
+                  <p class="card-price">
+                    <span class="price">₹96,990 </span>
+                    <strike>₹1,36,990</strike>
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-primary">Add to Cart</button>
+                  <button class="btn-card">
+                    <i class="far fa-heart"></i>
+                  </button>
+                  <button class="btn-card">
+                    <i class="fas fa-share-alt"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/S3tHQguUdE7Ss57jEXKY"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="component-example">
+            <h3>Horizontal Card</h3>
+            <div class="component-example__container">
+              <div class="card-horizontal">
+                <span class="cancel-btn"><i class="fas fa-times"></i></span>
+                <div class="card-badge badge green">Trending</div>
+                <img
+                  src="../assets/images/card-img.png"
+                  alt="card"
+                  loading="lazy"
+                />
+                <div class="card-horizontal-right-part">
+                  <div class="card-body">
+                    <h4 class="card-header">
+                      ASUS ROG Strix G15 Ryzen 9 Octa Core 5900HX - (16 GB/512
+                      GB SSD/Windows 10 Home/4 GB Graphic...
+                    </h4>
+                    <p class="card-price">
+                      <span class="price">₹96,990 </span>
+                      <strike>₹1,36,990</strike>
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn-card">
+                      <i class="far fa-heart"></i>
+                    </button>
+                    <button class="btn-card">
+                      <i class="fas fa-share-alt"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/5oy602OJ3ldPDy5adxoG"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h3>Text Overlay Card</h3>
+            <div class="component-example__container">
+              <div class="card-vertical text-overlay">
+                <img
+                  src="../assets/images/txt-overlay.jpg"
+                  alt="card"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h4 class="card-overlay-text">
+                    Gaming consoles are back in stock. HURRY UP!!
+                  </h4>
+                  <button class="btn btn-primary">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/MnDwPcPHV7tXORGIC5uF"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+
+        <!-- ---------- Images ---------- -->
+
+        <section id="image-section">
+          <div class="component-description">
+            <h2>Images</h2>
+            <p>
+              Images can be responsive to fit the parent's width, and also can
+              be customised to be round shaped
+            </p>
+          </div>
+
+          <div class="component-example">
+            <h3>Responsive Image</h3>
+            <p>
+              You can add class img-responsive to make your image fit the width
+              of container.
+            </p>
+
+            <div class="component-example__container align-center">
+              <img
+                class="img-responsive"
+                src="../assets/images/img-responsive.jpg"
+                alt="pic"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/ujePAZuRFk12GugEukdJ"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="component-example">
+            <h3>Rounded Image</h3>
+            <p>You can add class img-round to make your image round shaped.</p>
+
+            <div class="component-example__container align-center">
+              <img
+                class="img-round"
+                src="../assets/images/img-responsive.jpg"
+                alt="rounded-pic"
+                loading="lazy"
+              />
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/zrr2RqEJ1bzM46v0WmLe"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+        <!-- ---------- Images ---------- -->
+
+        <section id="input-section">
+          <div class="component-description">
+            <h2>Input</h2>
+            <p>
+              Inputs are used to take information from the user to authenticate
+              or save their information to the server.
+            </p>
+          </div>
+          <div class="component-example">
+            <h3>Signup Input Form</h3>
+            <div class="component-example__container">
+              <form class="card-vertical signup-form">
+                <h3>Signup</h3>
+
+                <div class="input-group-parent">
+                  <div class="input-group">
+                    <label>Email address</label>
+                    <input
+                      class="input-box"
+                      type="email"
+                      placeholder="vishal@mail.com"
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <label> Password </label>
+                    <input
+                      class="input-box"
+                      type="password"
+                      placeholder="******"
+                    />
+                  </div>
+
+                  <div class="select-box">
+                    <input type="checkbox" name="accept" />
+                    <label for="accept"
+                      >I accept all <a href="#">terms and conditions</a></label
+                    >
+                  </div>
+
+                  <button class="btn btn-primary">Create New Account</button>
+                  <button class="btn btn-link">
+                    Already have an account &nbsp >
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/fYKn5Nqn6ktKNGP2TGt1"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+          <div class="component-example">
+            <h3>Login Input Form with validations</h3>
+            <div class="component-example__container">
+              <form class="card-vertical signup-form">
+                <h3>Login</h3>
+
+                <div class="input-group-parent">
+                  <div class="input-group">
+                    <label>Email address</label>
+                    <input
+                      class="input-box input-box-success"
+                      type="email"
+                      placeholder="vishal@mail.com"
+                    />
+                    <div class="success-msg">Email matched</div>
+                  </div>
+
+                  <div class="input-group">
+                    <label> Password </label>
+                    <input
+                      class="input-box input-box-error"
+                      type="password"
+                      placeholder="******"
+                    />
+                    <div class="error-msg">Incorrect password</div>
+                  </div>
+
+                  <div class="select-box">
+                    <input type="checkbox" name="accept" />
+                    <label for="accept">Remember me</label>
+                    <a class="forgot-pass" href="">Forgot your Password?</a>
+                  </div>
+
+                  <button class="btn btn-primary">Login</button>
+                  <button class="btn btn-link">
+                    Create New Account &nbsp >
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/zDhLrIrqCP4wxt2oMVJA"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="component-example">
+            <h3>Textbox Form</h3>
+            <div class="component-example__container">
+              <textarea
+                class="textarea"
+                placeholder="Please provide your feedback."
+              ></textarea>
+            </div>
+          </div>
+
+          <p class="code-snippet-heading">Code Snippets</p>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/XYitgQ0MiXdYR7NG59y2"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>

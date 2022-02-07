@@ -15,7 +15,8 @@
     color: white
 }
 .btn-primary:hover{
-    background: var(--primary-light-color) ;
+    background: var(--primary-dark-color) ;
+    color: white;
 }
 
 

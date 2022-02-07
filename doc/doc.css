@@ -1,44 +1,219 @@
-.hero{
-    padding: 4rem;
+
+
+/* -------------   */
+
+@import url(../styles/main.css);
+
+
+/* ***** page layout *** */
+
+.page-layout{
     display: grid;
-    grid-template-columns: 6rem 1fr 1fr 2rem;
+    grid-template-columns: 1fr 3fr 0.3fr;
     grid-template-areas: 
-    ". left right .";
-    /* height: 80vh; */
-gap: 1rem;
-
-
+    "header  header header"
+    "sidebar  main   .";
 }
 
-.hero > div {
-    padding: 1rem;
 
-}
+/* ***** header ****** */
 
-.hero-left{
-    grid-area: left;
+.header{
+    grid-area: header;
+    padding: 1rem 2.8rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 40vw;
- 
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 8px -8px #d6d6d6;
+    font-weight: 500;
+    background-color: var(--primary-color)
 }
 
-.hero-left > a {
-    width: 18rem;
-    height: 4.5rem;
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 24px;
+.header__logo{
+    display: flex;
+    margin-left: 7rem;
+}
+.header__logo > img{
+    width: 15rem;
+    height: 5.8rem
+}
+
+.header__links{
+    list-style: none;
+    display: flex;
+    font-size: 2.9rem;
+    align-items: center;
+    margin-right: 6 rem;
+}
+
+.header__links li i{
+    color: black;
+}
+
+.header__links li i:hover{
+    cursor: pointer;
+    color: #e6e4e4;
+}
+
+
+/* ****** Sidebar ******* */
+
+.sidebar-main{
+    position: relative;
+    grid-area: sidebar;
     
 }
 
-.hero-right{
-    grid-area:right;
+.sidebar{
+    padding: 3rem;
+    padding-left: 4.5rem;
+    padding-right: 3rem;
+    position: sticky;
+    overflow-y: auto;
+    top: 7.5rem;
+    height: calc(100vh - 8.125rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.hero-right > img{
-    width: 65rem;
-    height: 48rem;
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+.sidebar__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
 }
+
+.sidebar__links::after{
+    content: "";
+    position: absolute;
+    border-right: 2.5px solid var(--primary-color);
+    top: -14rem;
+    right: -0.9rem;
+    height: 145%;
+}
+
+.sidebar h3{
+    display: grid;
+    justify-content: center;
+    
+}
+
+.sidebar a{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    display: grid;
+    justify-content: center;
+}
+
+.sidebar li{
+    list-style: none;
+}
+
+.sidebar a:hover{
+    color: var(--primary-light-color);
+}
+
+/* ****** scroll margin ***** */
+ #alert-section,
+ #avatar-section,
+ #badge-section,
+ #button-section,
+ #card-section,
+ #image-section,
+ #input-section{scroll-margin-block: 10rem;}
+
+/* ******* container ******* */
+
+.container{
+    padding: 1rem 2rem;
+    padding-left: 4rem;
+    top: 15rem;
+}
+
+.component-description{
+    margin: 2.2rem 0 3rem 0;
+}
+
+.component-description > h2{
+    color: var(--primary-color);
+    position: relative;
+}
+
+.component-example{
+    margin-top: 5rem
+}
+
+.component-example > h3{
+    margin-bottom: 3rem;
+}
+
+.component-example__container{
+    display: flex;
+    border: 1px solid rgb(20 20 20 / 12%);
+    border-radius: 0 2rem;
+    padding: 2rem;
+    background-color: var(--xlight-blue);
+    justify-content: space-evenly;
+}
+
+
+
+/* ***** section break line ***** */
+
+.section-break-line{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+/* **** Code snippet **** */
+
+.code-snippet{
+    margin: 1rem 0 3rem 0;
+    height: 21rem;
+    background-color: var(--xlight-blue);
+    border-radius: 0 2rem;
+    border: 1px solid rgb(20 20 20 / 12%);
+    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center;
+    
+}
+
+.code-snippet-heading{
+    font-weight: 500;
+}
+
+.code-snippet-code{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    border: 0;
+    transform: scale(1);
+    overflow: hidden;
+}
+
+.code-snippet > iframe {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
