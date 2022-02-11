@@ -1,8 +1,4 @@
-/* **** Anchor tag */
-a{
-    text-decoration: none;
-    cursor: pointer;
-}
+
 
 .color-dark-grey{
     color: var(--dark-grey)

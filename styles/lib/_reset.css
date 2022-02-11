@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* **** Anchor tag */
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
