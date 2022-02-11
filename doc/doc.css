@@ -46,7 +46,7 @@
     display: flex;
     font-size: 2.9rem;
     align-items: center;
-    margin-right: 6 rem;
+    margin-right: 6rem;
 }
 
 .header__links li i{
@@ -96,15 +96,14 @@
     content: "";
     position: absolute;
     border-right: 2.5px solid var(--primary-color);
-    top: -14rem;
+    top: -20rem;
     right: -0.9rem;
-    height: 145%;
+    height: 150%;
 }
 
 .sidebar h3{
     display: grid;
     justify-content: center;
-    
 }
 
 .sidebar a{

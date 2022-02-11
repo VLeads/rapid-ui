@@ -37,14 +37,14 @@
         <!-- <div class="header__name">Rapid UI</div> -->
         <ul class="header__links">
           <li class="mr-3">
-            <a href="https://twitter.com/Vishalk01234">
+            <a href="https://twitter.com/Vishalk01234" target="_blank">
               <i class="fab fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a href="https://github.com/VLeads"
-              ><i class="fab fa-github"></i
-            ></a>
+            <a href="https://github.com/VLeads" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
           </li>
         </ul>
       </header>
@@ -65,6 +65,10 @@
             <a href="#card-section"><li>Card</li></a>
             <a href="#image-section"><li>Image</li></a>
             <a href="#input-section"><li>Input</li></a>
+            <a href="#nav-section"><li>Navigation</li></a>
+            <a href="#lists-section"><li>Lists</li></a>
+            <a href="#modal-section"><li>Modal</li></a>
+            <a href="#modal-section"><li>Grids</li></a>
           </ul>
         </div>
       </aside>
@@ -446,7 +450,7 @@
             <div class="component-example__container">
               <h3>
                 Example of text with badge
-                <span class="badge grey">NEW</span>
+                <span class="badge blue">NEW</span>
               </h3>
             </div>
 
@@ -454,7 +458,7 @@
             <div class="code-snippet">
               <iframe
                 class="code-snippet-code"
-                src="https://carbon.now.sh/embed/F8fnvA2MERVYn4WpF8MH"
+                src="https://carbon.now.sh/embed/PGUUQjkfjjEYepSUefdD"
                 sandbox="allow-scripts allow-same-origin"
               >
               </iframe>
@@ -926,6 +930,154 @@
             <iframe
               class="code-snippet-code"
               src="https://carbon.now.sh/embed/XYitgQ0MiXdYR7NG59y2"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+
+        <!-- ------ navbar ----- -->
+
+        <section id="nav-section">
+          <div class="component-description">
+            <h2>Navbar</h2>
+            <p>
+              Navbar provides content and actions related to the current screen.
+              It's used for branding, screen titles, navigation, and actions.
+            </p>
+          </div>
+          <div class="component-example">
+            <div class="component-example__container">
+              <nav class="navbar">
+                <a class="navbar-logo" href="#">
+                  <img
+                    src="../assets/images/rapidstore.png"
+                    alt="rapid store"
+                  />
+                </a>
+                <div class="search-box">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="Search" />
+                </div>
+                <ul class="nav-links">
+                  <li>
+                    <a href="#" class="btn btn-primary">Login</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="badge-icon">
+                        <span class="badge red">20+</span>
+                        <i class="far fa-heart"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="badge-icon">
+                        <span class="badge blue">5</span>
+                        <i class="far fa-shopping-cart"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <p class="code-snippet-heading">Code Snippets</p>
+            <div class="code-snippet">
+              <iframe
+                class="code-snippet-code"
+                src="https://carbon.now.sh/embed/WoNdJwVILKGsCNtRzHeh"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <hr class="section-break-line" />
+
+        <!-- ------ lists ----- -->
+        <section id="lists-section">
+          <div class="component-description">
+            <h2>Lists</h2>
+            <p>List is used to show related items collectively.</p>
+          </div>
+          <div class="component-example">
+            <h3>Basic List</h3>
+            <div class="component-example__container">
+              <ul class="list">
+                <li class="list-item">First Item</li>
+                <li class="list-item">Second Item</li>
+                <li class="list-item">Third Item</li>
+                <li class="list-item">Fourth Item</li>
+              </ul>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/u0IajM6cXYzFGqtYMOmz"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <div class="component-example">
+            <h3>Basic List</h3>
+            <div class="component-example__container">
+              <ul class="list">
+                <li class="stacked-list-item">
+                  <img
+                    src="../assets/images/headphone.jpeg"
+                    alt="headphone"
+                    loading="lazy"
+                  />
+                  <div class="stacked-list-desc">
+                    <div class="heading">Stacked list heading</div>
+                    <div class="desc">
+                      Stacked list Description eg. Boost up your development
+                      speed with Rapid UI
+                    </div>
+                  </div>
+                </li>
+                <li class="stacked-list-item">
+                  <img
+                    src="../assets/images/headphone.jpeg"
+                    alt="headphone"
+                    loading="lazy"
+                  />
+                  <div class="stacked-list-desc">
+                    <div class="heading">Stacked list heading</div>
+                    <div class="desc">
+                      Stacked list Description eg. Boost up your development
+                      speed with Rapid UI
+                    </div>
+                  </div>
+                </li>
+                <li class="stacked-list-item">
+                  <img
+                    src="../assets/images/headphone.jpeg"
+                    alt="headphone"
+                    loading="lazy"
+                  />
+                  <div class="stacked-list-desc">
+                    <div class="heading">Stacked list heading</div>
+                    <div class="desc">
+                      Stacked list Description eg. Boost up your development
+                      speed with Rapid UI
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="code-snippet">
+            <iframe
+              class="code-snippet-code"
+              src="https://carbon.now.sh/embed/Cwj3sLPVRbKRbRk5uzub"
               sandbox="allow-scripts allow-same-origin"
             >
             </iframe>

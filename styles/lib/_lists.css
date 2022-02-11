@@ -1,0 +1,58 @@
+.list {
+    border: 1px solid var(--grey);
+    list-style: none;
+    width: 70%;
+    word-wrap: break-word;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+.list > li:last-child{
+    border-bottom: none;
+}
+
+.list > * {
+    border-bottom: 1px solid var(--grey);
+    cursor: pointer;
+}
+
+.list > .list-item{
+    padding: 1rem 2rem;
+}
+
+
+.list> *:hover{
+    background-color: rgb(190, 247, 250);
+}   
+
+/* stacked list */
+
+.stacked-list-item{
+    display: flex;
+    height: 18rem;
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+    word-wrap:break-word;
+}
+
+.stacked-list-item > img{
+    height: 100%;
+    width: 25rem;
+    object-fit: cover;
+}
+
+.stacked-list-desc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.stacked-list-desc > .heading{
+    font-size: 3rem;
+}
+
+.stacked-list-desc > .desc{
+    font-size: 2rem;
+}
