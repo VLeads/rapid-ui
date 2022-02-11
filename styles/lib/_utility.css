@@ -59,3 +59,7 @@
 .bg-green{
     background: #47b617;
 }
+
+.box-shadow{
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.24);
+}

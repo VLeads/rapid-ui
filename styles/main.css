@@ -15,6 +15,8 @@
 @import "./lib/_typography.css";
 @import "./lib/_navbar.css";
 @import "./lib/_lists.css";
+@import "./lib/_modal.css";
+@import "./lib/_toast.css";
 
 *{
     word-wrap: break-word;
