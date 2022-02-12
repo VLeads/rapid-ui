@@ -1,0 +1,42 @@
+.ratings{
+    border: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.ratings input{
+    display: none;
+}
+
+.ratings label{
+    color: var(--grey);
+    cursor: pointer;
+    font-size: 3rem;
+    position: relative;
+}
+
+.ratings label:before{
+    content: "\2605";
+    position: absolute;
+}
+
+.ratings label:hover:before,
+.ratings label:hover ~ label:before{
+    color: #f8dd43; 
+}
+
+.ratings input:checked ~ label:before {
+    color: #f8dd43; 
+  }
+
+.ratings input:checked ~ label:hover:before,
+.ratings input:checked ~ label:hover ~ label:before {
+    color: #dfbf09; 
+}
+
+.half-star{
+    width: 1.25rem;
+    overflow: hidden;    
+    transform: translateX(100%);
+}

@@ -17,6 +17,8 @@
 @import "./lib/_lists.css";
 @import "./lib/_modal.css";
 @import "./lib/_toast.css";
+@import "./lib/_rating.css";
+@import "./lib/_grid.css";
 
 *{
     word-wrap: break-word;
