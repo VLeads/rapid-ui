@@ -23,16 +23,16 @@
 
 .ratings label:hover:before,
 .ratings label:hover ~ label:before{
-    color: #f8dd43; 
+    color: var(--star-rating)
 }
 
 .ratings input:checked ~ label:before {
-    color: #f8dd43; 
+    color: var(--star-rating)
   }
 
 .ratings input:checked ~ label:hover:before,
 .ratings input:checked ~ label:hover ~ label:before {
-    color: #dfbf09; 
+    color: var(--star-rating-hover)
 }
 
 .half-star{
